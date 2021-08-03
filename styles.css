@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  height: 100px;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header img {
+  width: 180px;
+  float: left;
+}
+
+header .fa-list {
+  float: right;
+  line-height: 100px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  
+  
+
+}
+
+footer {
+  color: #333;
+  margin-top: 64px;
+}
+
+footer li {
+  list-style: none;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+footer p {
+  font-size: 10px;
+}
+
+/* modal */
+.modal-wrapper {
+  display: none;
+}
+
+.modal-mask {
+  background: #000;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+  
+}
+
+.modal-wrapper ul {
+  position: absolute;
+  top: 40px;
+  left: 48px;
+  z-index: 100;
+  font-size: 14px;
+  color: #fff;
+  list-style: none;
+}
+
+.modal-wrapper li {
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.modal-wrapper li:hover {
+  opacity: 0.6;
+}
+
+.fa-times {
+  position: absolute;
+    top: 30px;
+    right: 25px;
+    z-index: 100;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+/* products */
+.product-wrapper {
+  padding-top: 96px;
+}
+
+.product-wrapper img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.product-wrapper li {
+  list-style: none;
+  width: 48%;
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.product-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-wrapper h1 {
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.html-change {
+  text-align: center;
+}
+
+
+.html-change a {
+  color: silver;
+  margin: 0 10px;
+}
+
+.html-change a:hover {
+  opacity: 0.7;
+}
+
+@media(min-width:670px) {
+  .fa-times {
+    right: 64px;
+  }
+  
+  .product-wrapper li {
+    width: 23%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  footer p {
+    float: right;
+    margin-bottom: 16px;
+  }
+
+}
